@@ -1,4 +1,4 @@
-{
+module.exports = {
   "development": {
     "username": "express-mvp-dbuser",
     "password": "123.456",
