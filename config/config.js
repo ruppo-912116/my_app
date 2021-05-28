@@ -8,17 +8,19 @@ module.exports = {
     "port": 5432,
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
+    "username": "express-mvp-dbuser",
+    "password": "123.456",
+    "database": "express-mvp-db",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres",
+    "port": 5432,
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
+    "username": "express-mvp-dbuser",
+    "password": "123.456",
+    "database": "express-mvp-db",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres",
+    "port": 5432,
   }
 }
