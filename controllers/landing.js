@@ -17,3 +17,14 @@ exports.show_leads = function(req,res,next){
         res.render('leadList', {leads: leads});
     })
 }
+
+exports.show_lead = function(req,res,next){
+    const query = req.params.lead_id;
+   return models.Lead.findOne({
+       where: {
+           id: query
+       }
+   }).then(lead => {
+       res.render('leadDetails', {lead: lead})
+   })
+}

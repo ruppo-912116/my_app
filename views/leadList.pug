@@ -4,4 +4,7 @@ block content
     if leads
         h1 Leads list
         for lead in leads
-            h1 #{lead.email}
+            h1
+                span #{lead.email}
+                |
+                a(href='/lead/'+ lead.id) Show Details
